@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <title> Learning CSS </title>
+
+        <style type = "text/css">
+
+            h1, p{
+                color:white;
+                background-color: red;
+            }
+
+                /* decentor selector */
+            div p{
+                color: green;
+                background-color: black;
+            }
+
+                /* child selector */
+            div > p{
+                color: blue;
+                background-color: blueviolet;
+            }
+
+                /* adjacent sibling selector */
+            div + p{
+                color: crimson;
+                background-color: aqua;
+            }
+
+                /* general sibling selector */
+            /*
+            div ~ p{
+                color: gold;
+                background-color: cornflowerblue;
+            }
+            */
+
+        </style>
+ 
+    </head>
+
+    <body>
+
+        <h1> This is Header Option </h1>
+        <div>
+            <p> my paragraph 1 </p>
+            <p> my paragraph 2 </p>
+            <section> <p> my paragraph 3 </p> </section>
+        </div>
+        <p> my paragraph 4 </p>
+        <p> my paragraph 5 </p>
+      
+    </body>
+
+</html>
