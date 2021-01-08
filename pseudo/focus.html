@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Focus</title>
+        <style>
+            
+            input:focus{
+                font-size: 20;
+                font-weight: 800;
+                color: aqua;
+            }
+            
+            li:first-child{
+                background-color: indianred;
+            }
+
+            li:last-child{
+                background-color: bisque;
+            }
+
+            /* for even selection */
+            li:nth-child(2n){
+                background-color: blue;
+            }
+            
+
+            /* for odd selection */
+            li:nth-child(2n+1){
+                background-color: cyan;
+            }
+
+            /* change visited site color */
+            a:visited{
+                color: brown;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <input type="text" name="username"> <br>
+        <input type="text" name="email"> <br>
+        <input type="password" name="password"> <br>
+        <ul>
+            <li>sami</li>
+            <li>nadim</li>
+            <li>nayeem</li>
+            <li>titul</li>
+            <li>sobuj</li>
+            <li>hannan</li>
+            <li>onik</li>
+        </ul>
+        <a href="https://github.com/">Github</a><br>
+        <a href="https://www.google.com/">Google</a><br>
+        <a href="https://youtube.com">Youtube</a>
+    </body>
+</html>
