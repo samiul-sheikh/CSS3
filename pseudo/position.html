@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Position(static/relative/absolute/fixed)</title>
+        <style>
+            .maincontent{
+                background-color: aquamarine;
+            }
+
+            div{
+                height: 200px;
+                width: 200px;
+                background-color: blueviolet;
+            }
+
+            #first{
+                background-color: salmon;
+                /* position: fixed; */
+            }
+
+            #second{
+                background-color: red;
+                position: relative;
+                left: 200px;
+            }
+
+            #third{
+                background-color: green;
+                /* position: absolute; */
+
+            }
+        </style>
+    </head>
+
+    <body>
+        <section>
+            <h1>Different kinds of position(static/relative/absolute/fixed)</h1>
+        </section>
+        
+        <section class="maincontent">
+            <div id="first"></div>
+            <div id="second"></div>
+            <div id="third"></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </section>
+    </body>
+</html>
