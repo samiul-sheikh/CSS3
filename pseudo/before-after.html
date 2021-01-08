@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pseudo element before/after</title>
+        <style>
+            
+            h1::before{
+                content: "Hello ";
+                font-size: 25px;
+                background-color: bisque;
+            }
+
+            .special-effect::after{
+                content: " Bye";
+                font-size: 20px;
+                background-color: aquamarine;
+            }
+
+            body{
+                counter-reset: section;
+            }
+
+            p::before {
+                counter-increment: section;
+                content: "Friend " counter(section) ": ";
+            }
+
+            p::after {
+                content: "🥰"; 
+            }
+
+
+
+
+
+        </style>
+    </head>
+
+    <body>
+        <h1>Pseudo Class</h1>
+        <h1 class="special-effect">Parent Class</h1>
+        <h1 class="special-effect">Child Class</h1>
+
+        <input type="text" name="username"> <br>
+        <input type="text" name="email"> <br>
+        <input type="password" name="password"> <br>
+        
+        <ul>
+            <p>samiul</p>
+            <p>nadim</p>
+            <p>nayeem</p>
+            <p>titul</p>
+            <p>sobuj</p>
+            <p>hannan</p>
+            <p>onik</p>
+        </ul>
+        
+        <a href="https://github.com/samiul-sheikh">Github</a><br>
+        <a href="https://www.google.com/">Google</a><br>
+        <a href="https://youtube.com">Youtube</a>
+    </body>
+</html>
